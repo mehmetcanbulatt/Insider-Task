@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.Crud</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">0</div>
+            
+<div class="bg-danger" id="nav-fail">1</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2023-04-17 05:43:42 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item failed">
+<a href="#[5:48]">[5:48] Negative Finds pets by Sold status </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/Crud.feature</span><span class="feature-description">Crud</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[5:48]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [5:48]</span><span class="scenario-name">Negative Finds pets by Sold status </span>
+</div>
+<div class="scenario-time failed">ms: 1303</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[5:48]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[5:48]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url baseUrl</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row" data-parent="[5:48]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[5:48]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def requestParams = read('crud.json')</div>
+</div>
+<div class="time-cell passed">183</div>
+</div>
+<div class="step-row" data-parent="[5:48]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* configure driver = { type: '#(driverType)', executable: '#(driverExecutable)', addOptions: #(driverOptions), headless: #(driverHeadless), webDriverSession: #(webDriverSession), showDriverLog: true }</div>
+</div>
+<div class="time-cell passed">16</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Given path 'v2/pet/findByStatus'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And params requestParams.findByStatusSoldRequest</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">1093</div>
+</div>
+<div class="preformatted" data-parent="7">17:43:41.430 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: petstore.swagger.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_312)
+
+17:43:42.187 response time in milliseconds: 756.11
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Mon, 17 Apr 2023 14:43:43 GMT
+1 &lt; Server: Jetty(9.2.9.v20150224)
+1 &lt; Transfer-Encoding: chunked
+[{"id":9223372036854617241,"category":{"id":51395163,"name":"anim Duis et commodo eu"},"name":"doggie","photoUrls":["sit esse","incididunt cupidatat dolor dolore"],"tags":[{"id":36100064,"name":"dolor ex amet"},{"id":-87807797,"name":"laborum"}],"status":"sold"},{"id":40,"category":{"id":0,"name":"string"},"name":"Bulldog","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":9999,"category":{"id":9999,"name":"Nishant0.9657309489078909"},"name":"Nishant0.9657309489078909","photoUrls":["Nishant0.9657309489078909"],"tags":[{"id":9999,"name":"Nishant0.9657309489078909"}],"status":"sold"},{"id":2156,"category":{"id":1366825701,"name":"automation"},"name":"hello kity","photoUrls":["foo.bar.com/1","foo.bar.com/2"],"tags":[{"id":332,"name":"tagss"}],"status":"sold"},{"id":37930519,"category":{"id":-20083820,"name":"est"},"name":"doggie","photoUrls":["consectetur","proident sint"],"tags":[{"id":-50305895,"name":"occaecat labore"},{"id":-90748378,"name":"Duis irure"}],"status":"sold"},{"id":47,"category":{"id":10,"name":"Dogs"},"name":"Bonya","photoUrls":["https://img.freepik.com/free-vector/different-pets-concept_52683-37940.jpg?w=2000"],"tags":[{"id":1,"name":"Doggie"}],"status":"sold"},{"id":42,"category":{"id":4,"name":"FISH"},"name":"GOLD","photoUrls":["string"],"tags":[{"id":142,"name":"WATER"}],"status":"sold"},{"id":13,"category":{"id":0,"name":"cats"},"photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":141,"category":{"id":141,"name":"string"},"name":"luna","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"}]</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref failed">8</div>
+<div class="step-cell failed">Then status 404</div>
+</div>
+<div class="time-cell failed">1</div>
+</div>
+<div class="preformatted" data-parent="8">17:43:42.190 status code was: 200, expected: 404, response time: 756, url: https://petstore.swagger.io/v2/pet/findByStatus?status=sold, response: [{"photoUrls":["sit esse","incididunt cupidatat dolor dolore"],"name":"doggie","id":9223372036854617241,"category":{"name":"anim Duis et commodo eu","id":51395163},"tags":[{"name":"dolor ex amet","id":36100064},{"name":"laborum","id":-87807797}],"status":"sold"},{"photoUrls":["string"],"name":"Bulldog","id":40,"category":{"name":"string","id":0},"tags":[{"name":"string","id":0}],"status":"sold"},{"photoUrls":["Nishant0.9657309489078909"],"name":"Nishant0.9657309489078909","id":9999,"category":{"name":"Nishant0.9657309489078909","id":9999},"tags":[{"name":"Nishant0.9657309489078909","id":9999}],"status":"sold"},{"photoUrls":["foo.bar.com/1","foo.bar.com/2"],"name":"hello kity","id":2156,"category":{"name":"automation","id":1366825701},"tags":[{"name":"tagss","id":332}],"status":"sold"},{"photoUrls":["consectetur","proident sint"],"name":"doggie","id":37930519,"category":{"name":"est","id":-20083820},"tags":[{"name":"occaecat labore","id":-50305895},{"name":"Duis irure","id":-90748378}],"status":"sold"},{"photoUrls":["https://img.freepik.com/free-vector/different-pets-concept_52683-37940.jpg?w=2000"],"name":"Bonya","id":47,"category":{"name":"Dogs","id":10},"tags":[{"name":"Doggie","id":1}],"status":"sold"},{"photoUrls":["string"],"name":"GOLD","id":42,"category":{"name":"FISH","id":4},"tags":[{"name":"WATER","id":142}],"status":"sold"},{"photoUrls":["string"],"id":13,"category":{"name":"cats","id":0},"tags":[{"name":"string","id":0}],"status":"sold"},{"photoUrls":["string"],"name":"luna","id":141,"category":{"name":"string","id":141},"tags":[{"name":"string","id":0}],"status":"sold"}]
+Crud.feature:52 - status code was: 200, expected: 404, response time: 756, url: https://petstore.swagger.io/v2/pet/findByStatus?status=sold, response: [{"photoUrls":["sit esse","incididunt cupidatat dolor dolore"],"name":"doggie","id":9223372036854617241,"category":{"name":"anim Duis et commodo eu","id":51395163},"tags":[{"name":"dolor ex amet","id":36100064},{"name":"laborum","id":-87807797}],"status":"sold"},{"photoUrls":["string"],"name":"Bulldog","id":40,"category":{"name":"string","id":0},"tags":[{"name":"string","id":0}],"status":"sold"},{"photoUrls":["Nishant0.9657309489078909"],"name":"Nishant0.9657309489078909","id":9999,"category":{"name":"Nishant0.9657309489078909","id":9999},"tags":[{"name":"Nishant0.9657309489078909","id":9999}],"status":"sold"},{"photoUrls":["foo.bar.com/1","foo.bar.com/2"],"name":"hello kity","id":2156,"category":{"name":"automation","id":1366825701},"tags":[{"name":"tagss","id":332}],"status":"sold"},{"photoUrls":["consectetur","proident sint"],"name":"doggie","id":37930519,"category":{"name":"est","id":-20083820},"tags":[{"name":"occaecat labore","id":-50305895},{"name":"Duis irure","id":-90748378}],"status":"sold"},{"photoUrls":["https://img.freepik.com/free-vector/different-pets-concept_52683-37940.jpg?w=2000"],"name":"Bonya","id":47,"category":{"name":"Dogs","id":10},"tags":[{"name":"Doggie","id":1}],"status":"sold"},{"photoUrls":["string"],"name":"GOLD","id":42,"category":{"name":"FISH","id":4},"tags":[{"name":"WATER","id":142}],"status":"sold"},{"photoUrls":["string"],"id":13,"category":{"name":"cats","id":0},"tags":[{"name":"string","id":0}],"status":"sold"},{"photoUrls":["string"],"name":"luna","id":141,"category":{"name":"string","id":141},"tags":[{"name":"string","id":0}],"status":"sold"}]</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref skipped">9</div>
+<div class="step-cell skipped">And print response</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref skipped">10</div>
+<div class="step-cell skipped">* match response[*].status contains 'available'</div>
+</div>
+<div class="time-cell skipped">0</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

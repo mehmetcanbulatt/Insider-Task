@@ -1,0 +1,107 @@
+
+{
+"addRequest": {
+  "id": 10,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "Siberian Husky",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+},
+  "updateRequest": {
+    "id": 20,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "Chow Chow",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  "uploadImageRequest": {
+    "id": 10,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "Siberian Husky",
+    "photoUrls": [
+      "https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  "findByStatusSoldRequest": {
+  "status": "sold"
+},
+  "findByStatusAvailableRequest": {
+  "status": "available"
+},
+  "findByStatusPendingRequest": {
+  "status": "pending"
+},
+  "findByIdRequest": {
+    "id": 10
+  },
+  "updateFormDataRequest": {
+  "id": 30,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "Golden Retriever",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "pending"
+},
+  "deleteRequest": {
+    "id": 30,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "Golden Retriever",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  }
+
+
+}
